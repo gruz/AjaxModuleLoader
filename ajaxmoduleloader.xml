@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+  <name>plg_system_ajaxmoduleloader</name>
+  <author>Amy Stephen</author>
+  <creationDate>2015-08-14</creationDate>
+  <copyright>Copyright (C) 2005 - 2012 Open Source Matters. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>arygroup@gmail.com</authorEmail>
+  <authorUrl>http://gruz.org.ua/index.php?option=com_ars&amp;view=category&amp;id=11&amp;Itemid=183</authorUrl>
+  <version>1.0.15</version>
+  <description>PLG_SYSTEM_AJAXMODULELOADER_XML_DESCRIPTION</description>
+  <files>
+    <folder>helper</folder>
+    <folder>images</folder>
+    <folder>language</folder>
+    <filename>README.md</filename>
+    <filename plugin="ajaxmoduleloader">ajaxmoduleloader.php</filename>
+    <filename>index.html</filename>
+    <filename>scriptfile.php</filename>
+  </files>
+  <scriptfile>scriptfile.php</scriptfile>
+  <!-- Parameters -->
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="use_jquery_or_mootools" type="radio" class="btn-group" default="jquery" label="PLG_SYSTEM_AJAXMODULELOADER_PARAM_LABEL_USE_JQUERY_OR_MOOTOOLS">
+          <option value="jquery">JQuery</option>
+          <option value="mootools">Mootools</option>
+        </field>
+      </fieldset>
+    </fields>
+  </config>
+  <updateservers>
+    <servers type="extension" priority="1" name="ajaxmoduleloader">http://gruz.org.ua/index.php?option=com_ars&amp;view=update&amp;task=stream&amp;format=xml&amp;id=11&amp;dummy=extension.xml</servers>
+  </updateservers>
+</extension>
